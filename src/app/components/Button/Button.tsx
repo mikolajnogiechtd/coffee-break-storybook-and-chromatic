@@ -17,6 +17,9 @@ export const Button = ({
   onClick,
   ...rest
 }: ButtonProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const x = 0;
+
   return (
     <button
       type='button'
