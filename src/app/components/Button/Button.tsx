@@ -33,7 +33,7 @@ export const Button = ({
       style={{ backgroundColor }}
       onClick={onClick}
       {...rest}>
-      {children}
+      {children + 'x'}
     </button>
   );
 };
