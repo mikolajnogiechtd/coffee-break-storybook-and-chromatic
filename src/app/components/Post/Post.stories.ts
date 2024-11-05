@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Post } from './Post';
-import { Post as PostInterface } from '@/app/models/Post'; // Assuming you have a Post model defined somewhere
+import { Post as PostInterface } from '@/app/models/Post';
 
 const meta = {
   title: 'Shared/Post',
@@ -14,7 +14,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Mock Post Object
 const samplePost: PostInterface = {
   id: '1',
   title: 'Storybook & Chromatic',
@@ -24,14 +23,12 @@ const samplePost: PostInterface = {
   link: '#',
 };
 
-// Default Post Story
 export const Default: Story = {
   args: {
     post: samplePost,
   },
 };
 
-// Empty content Post Story
 export const EmptyContentPost: Story = {
   args: {
     post: {
