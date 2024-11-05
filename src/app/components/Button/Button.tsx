@@ -13,6 +13,7 @@ export const Button = ({
   variant = 'primary',
   size = 'medium',
   backgroundColor,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   children,
   onClick,
   ...rest
@@ -21,7 +22,7 @@ export const Button = ({
     <button
       type='button'
       className={classNames(
-        'cursor-pointer rounded-md font-sans font-bold border-2 border-transparent',
+        'cursor-pointer rounded-md font-sans font-semibold border-2 border-transparent',
         {
           'text-white bg-blue-500': variant === 'primary',
           'text-blue-500 border-2 border-blue-500': variant === 'secondary',
@@ -33,7 +34,7 @@ export const Button = ({
       style={{ backgroundColor }}
       onClick={onClick}
       {...rest}>
-      {children + ' '}
+      Hello
     </button>
   );
 };
