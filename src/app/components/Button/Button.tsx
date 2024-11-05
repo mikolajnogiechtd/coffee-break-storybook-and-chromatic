@@ -21,10 +21,10 @@ export const Button = ({
     <button
       type='button'
       className={classNames(
-        'cursor-pointer rounded-lg font-sans font-semibold border-2 border-transparent',
+        'cursor-pointer rounded-md font-sans font-semibold border-2 border-transparent',
         {
           'text-white bg-blue-500': variant === 'primary',
-          'text-blue-500 border-2 border-blue-400': variant === 'secondary',
+          'text-blue-500 border-2 border-blue-500': variant === 'secondary',
           'py-2 px-4 text-xs': size === 'small',
           'py-2.5 px-5': size === 'medium',
           'py-3 px-6 text-lg': size === 'large',
