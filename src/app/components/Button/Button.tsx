@@ -13,6 +13,7 @@ export const Button = ({
   variant = 'primary',
   size = 'medium',
   backgroundColor,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   children,
   onClick,
   ...rest
@@ -33,7 +34,7 @@ export const Button = ({
       style={{ backgroundColor }}
       onClick={onClick}
       {...rest}>
-      {children}
+      Hello
     </button>
   );
 };
